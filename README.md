@@ -5,11 +5,9 @@ Force curve data format (.xlsx):
 - Approach portion only, baseline flattened, calibrated
 - Excel layout: columns alternate: col1 = distance (nm), col2 = force (nN), col3 = distance (nm), col4 = force (nN), etc.
 
-Model:
-- Hertz spherical indenter: F = (4/3) * E/(1-nu^2) * sqrt(R) * delta^(3/2)
-- Bottom-effect (finite-thickness) correction applied using Garcia/Chiodini et al.
-   psi(chi) = 1 + 1.133*chi + 1.283*chi^2 + 0.769*chi^3 + 0.0975*chi^4
-   where chi = a/h and a = sqrt(R*delta) is the contact radius.
+Model: Bottom-effect (finite-thickness) correction applied using "S. Chiodini et al., Bottom Effect in Atomic Force Microscopy Nanomechanics. Small (2020)" :
+   $$\psi(\chi) = 1 + 1.133*\chi + 1.283*\chi^2 + 0.769*\chi^3 + 0.0975*\chi^4$$
+   where $\chi = a/h$ and $a = \sqrt(R*\delta)$ is the contact radius.
 
 Interactive workflow (per curve):
  1) Show one force-vs-distance curve (force in nN on y, distance in nm on
