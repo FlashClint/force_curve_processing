@@ -1,5 +1,5 @@
 # force_curve_processing
-a MATLAB script to batch-process AFM approach force curves
+a MATLAB script (created and tested on version R2024a) to batch-process AFM approach force curves
 
 Force curve data format (.xlsx):
 - Approach portion only, baseline flattened, calibrated
